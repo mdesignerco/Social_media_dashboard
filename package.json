@@ -1,0 +1,27 @@
+{
+  "name": "social_media_dashboard",
+  "version": "1.0.0",
+  "description": "challenge by mdesigner.co (JHernandez) for frontendmentor.com",
+  "main": "index.html",
+  "scripts": {
+    "social": "/assets/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mdesignerco/Social_media_dashboard.git"
+  },
+  "keywords": [
+    "Html",
+    "SASS",
+    "JavaScript",
+    "Social",
+    "media",
+    "Dashboard"
+  ],
+  "author": "J Hernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdesignerco/Social_media_dashboard/issues"
+  },
+  "homepage": "https://github.com/mdesignerco/Social_media_dashboard#readme"
+}
