@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    .header-background {
+        height: 40vh;
+    }
+    .content {
+        padding: 2em;
+        &_header{
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            height: 25vh;
+        }
+        &-information {
+            flex-wrap: wrap;
+        }
+        &_top {
+            flex-wrap: wrap;
+        }
+    }
+
+    .brand{
+        width: 100%;
+        border-bottom: 1px solid $colorTextLight;
+        padding-bottom: 2em;
+    }
+
+    .option {
+        &-mode {
+            justify-content: space-between;
+            width: 100%;
+            padding: 1em;
+        }
+    }
+
+    .card{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

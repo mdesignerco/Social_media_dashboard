@@ -1,0 +1,36 @@
+
+//primary
+$Lime-Green: hsl(163, 72%, 41%);
+$Bright-Red: hsl(356, 69%, 56%);
+
+//light theme
+$white: hsl(0, 0%, 100%);
+$backgroundTop: hsl(225, 100%, 98%);
+$backgroundCard: hsl(227, 47%, 96%);
+$colorTextLight: hsl(228, 12%, 44%);
+$colorTextDark: hsl(230, 17%, 14%);
+$toggleLightTheme: hsl(230, 22%, 74%);
+
+// Dark theme
+$VeryDarkBlue-BG: hsl(230, 17%, 14%);
+$VeryDarkBlueTop-BGPattern: hsl(232, 19%, 15%);
+$DarkUnsaturatedBlueCard-BG:hsl(228, 28%, 20%);
+$UnsaturatedBlue-Text: hsl(228, 34%, 66%);
+$WhiteText: hsl(0, 0%, 100%);
+$toggleDarkTheme: linear-gradient(to left, hsl(210, 78%, 56%)0%,hsl(146, 68%, 55%)100%);
+
+//Social Colors
+
+$social: ('facebook':  hsl(208, 92%, 53%),
+            'instagram': linear-gradient(to left, hsl(37, 97%, 70%),hsl(329, 70%, 58%)),
+            'twitter': hsl(203, 89%, 53%),
+            'youtube': hsl(348, 97%, 39%)
+        );
+//font params
+$font-family: 'Inter', sans-serif;
+$font-weightLight: 400;
+$font-weightBold: 700;
+$font-size-ligh: 10px;
+$font-size-card: 12px;
+$font-size-medium: 14px;
+$font-size-Xl: 32px;

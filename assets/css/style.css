@@ -12,6 +12,86 @@ body {
   color: #63687e;
 }
 
+.colorCardLight {
+  background-color: #f0f2fa;
+}
+.colorCardLight:hover {
+  background-color: #aeb3cb;
+}
+
+.colorCardDark {
+  background-color: #252a41;
+}
+.colorCardDark:hover {
+  background-color: #63687e;
+}
+
+.darkColor {
+  color: #1e202a;
+}
+
+.facebook::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #198ff5;
+  content: "";
+}
+
+.instagram::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(to left, #fdc468, #df4996);
+  content: "";
+}
+
+.twitter::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #1ca0f2;
+  content: "";
+}
+
+.youtube::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #c4032a;
+  content: "";
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  color: #1db489;
+}
+.indicator_text {
+  font-size: 12px;
+  font-weight: 700;
+}
+.indicator_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2px;
+}
+
+.red {
+  color: #dc414c;
+}
+
 .header-background {
   z-index: 0;
   position: absolute;
@@ -62,10 +142,6 @@ body {
   color: #63687e;
   font-size: 14px;
   font-weight: 700;
-}
-
-.darkColor {
-  color: #1e202a;
 }
 
 .option-mode {
@@ -122,20 +198,6 @@ body {
   to {
     justify-content: flex-start;
   }
-}
-
-.colorCardLight {
-  background-color: #f0f2fa;
-}
-.colorCardLight:hover {
-  background-color: #aeb3cb;
-}
-
-.colorCardDark {
-  background-color: #252a41;
-}
-.colorCardDark:hover {
-  background-color: #63687e;
 }
 
 .card {
@@ -206,68 +268,6 @@ body {
 }
 .card_footer {
   width: 100%;
-}
-
-.facebook::before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background: #198ff5;
-  content: "";
-}
-
-.instagram::before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background: linear-gradient(to left, #fdc468, #df4996);
-  content: "";
-}
-
-.twitter::before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background: #1ca0f2;
-  content: "";
-}
-
-.youtube::before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 4px;
-  background: #c4032a;
-  content: "";
-}
-
-.indicator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1em;
-  color: #1db489;
-}
-.indicator_text {
-  font-size: 12px;
-  font-weight: 700;
-}
-.indicator_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 2px;
-}
-
-.red {
-  color: #dc414c;
 }
 
 .details {

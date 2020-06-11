@@ -1,0 +1,54 @@
+//Global Styles
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: $font-family;
+    color: $colorTextLight
+}
+
+.colorCardLight {
+    @include cardHover($backgroundCard, $toggleLightTheme )
+}
+
+.colorCardDark {
+    @include cardHover($DarkUnsaturatedBlueCard-BG, $colorTextLight )
+}
+
+.darkColor{
+    color: $colorTextDark;
+}
+
+@each $social_name, $social_red in $social {
+    .#{$social_name} {
+        @include lineTop($social_red)
+    }
+}
+
+.indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    color: $Lime-Green;
+    &_text {
+        font-size: $font-size-card;
+        font-weight: $font-weightBold;
+    }
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2px;
+    }
+}
+
+.red {
+    color: $Bright-Red;
+}
