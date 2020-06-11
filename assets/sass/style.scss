@@ -16,8 +16,8 @@ $toggleLightTheme: hsl(230, 22%, 74%);
 // Dark theme
 $VeryDarkBlue-BG: hsl(230, 17%, 14%);
 $VeryDarkBlueTop-BGPattern: hsl(232, 19%, 15%);
-$DarkDesaturatedBlueCard-BG:hsl(228, 28%, 20%);
-$DesaturatedBlue-Text: hsl(228, 34%, 66%);
+$DarkUnsaturatedBlueCard-BG:hsl(228, 28%, 20%);
+$UnsaturatedBlue-Text: hsl(228, 34%, 66%);
 $WhiteText: hsl(0, 0%, 100%);
 $toggleDarkTheme: linear-gradient(to left, hsl(210, 78%, 56%)0%,hsl(146, 68%, 55%)100%);
 
@@ -104,6 +104,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: $font-family;
+    color: $colorTextLight
 }
 .header-background {
     z-index: 0;
@@ -147,7 +148,6 @@ body {
 
 .brand {
     &-title {
-        color: $colorTextDark;
         font-size: $font-size-Xl;
     }
     &-subtitle {
@@ -155,6 +155,10 @@ body {
         font-size: $font-size-medium;
         font-weight: $font-weightBold;
     }
+}
+
+.darkColor{
+    color: $colorTextDark;
 }
 
 .option {
@@ -185,6 +189,21 @@ body {
     }
 }
 
+@mixin cardHover ( $backgroundColor,$backgroundColorHover ) {
+    background-color: $backgroundColor;
+    &:hover {
+        background-color: $backgroundColorHover;
+    }
+}
+
+.colorCardLight {
+    @include cardHover($backgroundCard, $toggleLightTheme )
+}
+
+.colorCardDark {
+    @include cardHover($DarkUnsaturatedBlueCard-BG, $colorTextLight )
+}
+
 .card {
     position: relative;
     display: flex;
@@ -195,12 +214,8 @@ body {
     padding: 1em 2em;
     margin-right: 30px;
     border-radius: 8px;
-    background-color: $backgroundCard;
     overflow: hidden;
     cursor: pointer;
-    &:hover{
-        background-color: $toggleLightTheme;
-    }
     &:last-child {
         margin-right: 0;
     }
@@ -296,3 +311,55 @@ body {
     }
 }
 
+footer {
+    font-size: $font-size-medium;
+    a {
+        color: $Lime-Green;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .header-background {
+        height: 40vh;
+    }
+    .content {
+        padding: 2em;
+        &_header{
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            height: 25vh;
+        }
+        &-information {
+            flex-wrap: wrap;
+        }
+        &_top {
+            flex-wrap: wrap;
+        }
+    }
+
+    .brand{
+        width: 100%;
+        border-bottom: 1px solid $colorTextLight;
+        padding-bottom: 2em;
+    }
+
+    .option {
+        &-mode {
+            justify-content: space-between;
+            width: 100%;
+            padding: 1em;
+        }
+    }
+
+    .card{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
