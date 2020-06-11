@@ -11,13 +11,13 @@ function validateSwitch(){
     console.log( validateClass.className )
     if(validateClass.className === 'switch-left'){
         colorLightTheme()
-        switchText.innerText = 'Dark Mode';
+        switchText.innerText = 'Light Mode';
         validateClass.className = 'switch';
         switchTheme.style.backgroundColor ='hsl(0, 0%, 100%)'
     } else {
         colorDarkTheme()
         validateClass.className = 'switch-left'
-        switchText.innerText = 'Light Mode';
+        switchText.innerText = ' Dark Mode';
         switchTheme.style.backgroundColor ='hsl(232, 19%, 15%)'
     }
 }

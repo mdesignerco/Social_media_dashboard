@@ -136,7 +136,7 @@ body {
 }
 
 .brand-title {
-  font-size: 32px;
+  font-size: 28px;
 }
 .brand-subtitle {
   color: #63687e;
@@ -248,7 +248,7 @@ body {
   padding-top: 0.5em;
 }
 .card_information_text {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 .card_follower {
@@ -259,7 +259,7 @@ body {
   width: 100%;
 }
 .card_follower_number {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
 }
 .card_follower_subtitle {
@@ -274,7 +274,7 @@ body {
   padding: 2em 0;
 }
 .details-title {
-  font-size: 32px -4;
+  font-size: 28px -4;
   margin-bottom: 1em;
 }
 
